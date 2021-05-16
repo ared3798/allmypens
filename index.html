@@ -1,0 +1,190 @@
+<!DOCTYPE HTML 5>
+ <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+     <style>
+       * {
+				 /* This is to have the Montserrat font */
+         font-family: Montserrat, sans-serif;
+       }
+			 .text-icons {
+				 height: 20px;
+				 width: 20px;
+				 margin: auto;
+				 padding: -20px;
+				 
+			 }
+       .download {
+				 height: 20px;
+				 width: 20px;
+				 
+			 }
+       
+			 .titles, p {
+				 /* This is to center the text */
+         text-align: center;
+       }
+       .arrow {
+				 /* This is to make it the arrow smaller and center it */
+         width: 60px;
+         height: 60px;
+				 display: block;
+				 margin: auto;
+				 margin-left: auto;
+				 margin-right: auto;
+       }
+			 .codepen {
+				 /* This is to make the Codepen logo smaller */
+				 width: 60px;
+         height: 60px;
+			 }
+       a {
+				 /* This is to hide the underline of the link */
+         text-decoration: none;
+       }
+     /*  Not needed code again .button1 {
+         border-radius: 20px;
+         color: blue;
+         outline: none;
+       } */
+       .button1a {
+  color: #FFFFFF;
+   text-decoration: none;
+}
+.button1a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+       .button1a:hover, .button1a:active, .button1a:focus {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+       .button1:hover {
+				 /* This is to trigger the linear gradient when the button is hovered */
+  transition: 0.5s;
+   background: linear-gradient(45deg, darkgreen, darkblue);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  box-shadow: 0px 0px 0px blue;  
+}
+       .button1 {
+  border-radius: 17px;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  transition: 0.5s;
+  background: blue;
+  box-shadow: 0px 0px 20px blue;
+  border: blue;
+  outline: none;
+  fill: #FFFFFF;
+  font-size: 15px;
+				 background: linear-gradient(45deg, blue, green, lightgreen, lightblue);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+       .button2 {
+         transition: 0.5s;
+         outline: grey;
+         border: 2px solid grey;
+         font-size: 15px;
+         background: #FFFFFF;
+         border-radius: 0px;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+       }
+       .button2:hover {
+         transition: 0.5s;
+         font-size: 15px;
+         background: grey;
+       }
+       .button2a {
+         transition: 0.5s;
+  color: #000000;
+   text-decoration: none;
+}
+.button2a:visited {
+  transition: 0.5s;
+  color: #000000;
+  text-decoration: none;
+}
+       .button2a:hover, .button2a:active, .button2a:focus {
+         transition: 0.5s;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+       .pens {
+         background: linear-gradient(-45deg, red, orange, yellow, green);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+         outline: #000000;
+         border-radius: 20px;
+         margin: auto;
+         padding: 15px;
+         width: 250px;
+         top: 0%;
+         left: 0%;
+         right: 0%;
+         bottom: 0%;
+         
+       }
+			/* some not needed code .pens:hover {
+				 transition: 0.5s;
+				 background: linear-gradient(to right, #00BFA5 , #64DD17);
+				 
+			 } */
+			.pens:hover {
+	background: linear-gradient(45deg, green, yellow, orange, red);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+			 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+     </style>
+   </head>
+   <body>
+     <div class="project">
+        <div class="pens">
+					<!-- This is the Codepen logo -->
+          <svg viewBox="0 0 100 100" class="codepen"><path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path></svg><div class="titles">
+					<!-- These are the titles -->
+       <h1><span>My Pens</span></h1>
+     <h6>Welcome to my Pens! Click on a button to start.</h6>
+       </div>
+					<!-- This is the down pointing arrow svg code -->
+          <svg viewBox="0 0 320 512" width="100" title="angle-double-down" class="arrow">
+  <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"/>
+</svg>     <!-- These are the buttons. The "class" attribute is to make it possible to design something with a specified class with CSS. the "id" atrribute is to make it possible to trigger something with a specified id with JS. That's the differnce between "class" and "id". -->
+          <button class="button1"><a href="/alt-files/js-clock.html" class="button1a"><span>JS Clock</span></a></button>
+          <button class="button1"><a href="/alt-files/register-form_engine.html" class="button1a"><span>Register Form</span></a></button>
+          <button class="button2"><a href="/alt-files/login-form_engine.html" class="button2a"><span><strong>Login Form</strong></span></a></button>
+					<p><span><svg viewBox="0 0 640 512" width="100" title="code" class="text-icons">
+  <path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" />
+						</svg></span> with <span><svg viewBox="0 0 512 512" width="100" title="heart" class="text-icons">
+  <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+						</svg></span> by Aremest Kimarol</p>
+					<button class="button2"><span><svg viewBox="0 0 384 512" width="100" title="file-download" class="download">
+  <path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z" />
+						</svg></span><a href="/main/index.html" download="index">Download</a>
+</button>
+          
+     </div>
+   </div> 
+		 <p> Don't know what to do? <a href="/main/README.html"> Read Me </a></p> 	 
+	 </body> 
+</html>
+     
