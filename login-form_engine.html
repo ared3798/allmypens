@@ -1,0 +1,85 @@
+<!DOCTYPE HTML 5>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing
+}
+body {
+    font-family: sans-serif;
+}
+.login_form {
+    width: 300px;
+    height: 380px;
+    box-shadow: 0px 0px 20px #00B6FF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+}
+.login_form h2 {
+    z-index: 9999;
+    margin: 10px 0px 20px;
+    color: #00B6FF;
+}
+.forms {
+    position: relative;
+    top: -20px;
+}
+input {
+    margin: 20px 0px 20px 0px;
+    width: 80%;
+    height: 10%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #07E4EC;
+    color: #8D8D8D;
+    padding: 10px 6px;
+}
+.submit {
+    background: #00FFAE;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login_form p {
+    position: relative;
+    top: -25px;
+    color: #00FFAE;
+    font-size: 10px;
+}
+.login_form a {
+    text-decoration: none;
+    color: blue;
+}
+.login_form a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+  <button><a href="/index.html">Back</a></button>
+<div class="login_form">
+<h2>Login</h2>
+<div class="forms">
+	<form>
+<input type="text" placeholder="Enter your username...">
+<br>
+<input type="text" placeholder="Enter your email address...">
+<br>
+<input type="password" placeholder="Enter your password...">
+<br>
+<input type="submit" value="Login" class="submit">
+</div>
+<p>Don't have an account? <a href="/alt-files/register-form_engine.html">Register</p>
+	</form>
+</div>   
+</body>
+</html>
